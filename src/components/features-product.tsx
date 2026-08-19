@@ -24,8 +24,7 @@ const FeaturesProduct = ({ products }: Props) => {
               <Image
                 alt={product.name}
                 className="size-full bg-muted object-cover"
-                width={0}
-                height={0}
+                fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 src={`/product-image/${product.picture}`}
                 loading="eager"
