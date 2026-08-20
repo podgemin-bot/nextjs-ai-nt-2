@@ -10,7 +10,16 @@ vi.mock('@/lib/cart-store', () => ({
 describe('CartButton', () => {
   it('calls addItem when clicked', () => {
     const mockAddItem = vi.fn()
-    vi.mocked(useCartStore).mockImplementation((selector) => selector({ addItem: mockAddItem } as any))
+    vi.mocked(useCartStore).mockImplementation((selector) =>
+  selector({
+    items: [],
+    addItem: mockAddItem,
+    removeItem: vi.fn(),
+    clearCart: vi.fn(),
+    totalItems: () => 0,
+    totalPrice: () => 0,
+  })
+)
 
     const product = { id: 1, name: 'Test Product', price: 100 }
     render(<CartButton product={product} />)
