@@ -20,16 +20,16 @@ async function ApiVersion() {
 // http://localhost:3000/about
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <section className="bg-gradient-to-b from-blue-50 to-white py-20">
+    <main className="min-h-screen bg-green-50">
+      <section className="bg-gradient-to-b from-green-100 to-green-50 py-20">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-          <h1 className="text-4xl font-bold tracking-[-0.04em] text-navy sm:text-5xl">
-            เกี่ยวกับ COSCI Pay
-          </h1>
-          <p className="mx-auto mt-6 max-w-xl text-lg text-gray-400">
-            เราพัฒนากระเป๋าเงินดิจิทัลที่ปลอดภัย ใช้งานง่าย และครอบคลุมทุกบริการ
-            ทางการเงิน เพื่อยกระดับคุณภาพชีวิตคนไทย
-          </p>
+           <h1 className="text-4xl font-bold tracking-[-0.04em] text-blue-700 sm:text-5xl">
+             เกี่ยวกับ COSCI Pay
+           </h1>
+           <p className="mx-auto mt-6 max-w-xl text-lg text-blue-600">
+             เราพัฒนากระเป๋าเงินดิจิทัลที่ปลอดภัย ใช้งานง่าย และครอบคลุมทุกบริการ
+             ทางการเงิน เพื่อยกระดับคุณภาพชีวิตคนไทย
+           </p>
           <Suspense fallback={<AppLoading />}>
             <ApiVersion />
           </Suspense>
@@ -43,10 +43,10 @@ export default function AboutPage() {
             { title: "วิสัยทัศน์", desc: "เป็นแอปซูเปอร์แอปทางการเงินอันดับหนึ่งของไทย" },
             { title: "คุณค่า", desc: "ปลอดภัย โปร่งใส และน่าเชื่อถือเสมอ" },
           ].map((c) => (
-            <div key={c.title} className="rounded-xl border border-gray-50 bg-white p-6 shadow-sm">
-              <h3 className="text-lg font-semibold text-navy">{c.title}</h3>
-              <p className="mt-2 text-gray-400">{c.desc}</p>
-            </div>
+             <div key={c.title} className="rounded-xl border border-gray-50 bg-white p-6 shadow-sm">
+               <h3 className="text-lg font-semibold text-blue-700">{c.title}</h3>
+               <p className="mt-2 text-blue-600">{c.desc}</p>
+             </div>
           ))}
         </div>
         <div className="mt-12 text-center">
