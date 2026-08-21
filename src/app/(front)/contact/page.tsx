@@ -57,7 +57,7 @@ export default function ContactPage() {
       <section className="bg-gradient-to-b from-blue-50 to-white py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <h1 className="text-4xl font-bold tracking-[-0.04em] text-navy sm:text-5xl">
-            ติดต่อเรา (Contact Us)
+            ติดต่อเรา 24*7
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-gray-400">
             สอบถามข้อมูลเพิ่มเติมหรือติดต่อทีมงาน เราพร้อมให้บริการทุกวัน
