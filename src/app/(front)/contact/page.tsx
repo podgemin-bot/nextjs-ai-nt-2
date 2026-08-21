@@ -20,7 +20,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "โทรศัพท์",
-    desc: "02-123-4567",
+    desc: "02-123-4567 0893001234",
   },
   {
     icon: Clock,
